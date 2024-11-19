@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:17-jdk-slim
 EXPOSE 8081
-ADD target/Spring-Docker.jar Spring-Docker.jar
-ENTRYPOINT ["java","-jar","/Spring-Docker.jar"]
+ADD target/spring-docker.jar spring-docker.jar
+ENTRYPOINT ["java","-jar","/spring-docker.jar"]
